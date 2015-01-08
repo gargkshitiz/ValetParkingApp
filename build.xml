@@ -6,7 +6,7 @@
 	<property name="test-output" location="test-output" />
 	<property name="dist" location="dist" />
 	<property name="main.class"  value="com.kshitiz.parking.client.ParkingLotApp"/>
-	<property name="jar" value="${dist}/parkingLot.jar" />
+	<property name="jar" value="${dist}/valetParking.jar" />
 	
 	<path id="classpath">
 		<fileset dir="${lib}" includes="**/*.jar" />
