@@ -1,6 +1,5 @@
-Design 
-Packages/classes under src/main/java folder
-============================================
+Design (packages/classes under src/main/java folder)
+=====================================================
 
 "com.kshitiz.parking.entities"
 
