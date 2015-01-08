@@ -1,5 +1,5 @@
-Design
-=======
+Design (packages under src/main/java)
+======================================
 
 "com.kshitiz.parking.entities"
 
