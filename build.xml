@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<project name="ParkingLot" default="build" basedir=".">
+	<property name="src" location="src" />
+	<property name="target" location="target" />
+	<property name="lib" location="lib" />
+	<property name="test-output" location="test-output" />
+	<property name="dist" location="dist" />
+	<property name="main.class"  value="com.kshitiz.parking.client.ParkingLotApp"/>
+	<property name="jar" value="${dist}/parkingLot.jar" />
+	
+	<path id="classpath">
+		<fileset dir="${lib}" includes="**/*.jar" />
+		<pathelement path="${target}"/>
+	</path>
+	
+	<target name="jar" depends="build">
+		<jar destfile="${jar}" basedir="${dist}" >
+			<manifest>
+				<attribute name="Main-Class" value="${main.class}" />
+			</manifest>
+		</jar>
+	</target>
+
+	<target name="build">
+		<echo message="Cleaning up..."/>
+		<delete dir="${target}" />
+		<delete dir="${dist}" />
+		<delete dir="${test-output}" />
+		<mkdir dir="${target}" />
+		<mkdir dir="${dist}" />
+		<mkdir dir="${test-output}"/>
+		<echo message="Compling source code..."/>
+		<javac srcdir="${src}" destdir="${target}" classpathref="classpath" includeantruntime="false"/>
+		<echo message="Running unit tests..."/>
+	    <testng classpathref="classpath" outputdir="${test-output}" haltOnfailure="true" verbose="2">
+	    	<classfileset dir="${target}" includes="**/*Test.class" />
+	    </testng>
+	</target>
+
+	<taskdef name="testng" classname="org.testng.TestNGAntTask" classpathref="classpath" />
+
+</project>
