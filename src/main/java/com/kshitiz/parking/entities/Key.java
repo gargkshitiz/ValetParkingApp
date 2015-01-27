@@ -2,10 +2,12 @@ package com.kshitiz.parking.entities;
 
 public class Key {
 	
-	private int chipNumber; 
+	private int chipNumber;
+	private String color; 
 
 	public Key(int chipNumber, String color){
 		this.chipNumber = chipNumber;
+		this.color = color;
 	}
 
 	@Override
