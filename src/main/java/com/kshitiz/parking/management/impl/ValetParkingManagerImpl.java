@@ -30,8 +30,8 @@ public class ValetParkingManagerImpl implements ValetParkingManager {
 		this.parkingLot = parkingLot;
 		this.valetPersonManager = valetPersonManager;
 		this.valetTokenManager = valetTokenManager;
-		this.valetTokenAndVehicleKeyMapping = new HashMap<ValetToken,Key>();
-		this.valetTokenAndParkingSpotMapping =  new HashMap<ValetToken, ParkingSpot>();
+		this.valetTokenAndVehicleKeyMapping = new ConcurrentHashMap<ValetToken,Key>();
+		this.valetTokenAndParkingSpotMapping =  new ConcurrentHashMap<ValetToken, ParkingSpot>();
 	}
 	
 	@Override
