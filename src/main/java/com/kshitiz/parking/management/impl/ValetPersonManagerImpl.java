@@ -7,7 +7,7 @@ import com.kshitiz.parking.exception.ValetPersonUnavailableException;
 import com.kshitiz.parking.management.ValetPersonManager;
 
 public class ValetPersonManagerImpl implements ValetPersonManager {
-	private ArrayList<ValetPerson> valetPersons;
+	private List<ValetPerson> valetPersons;
 
 	public ValetPersonManagerImpl(int totalValetPersons){
 		this.valetPersons = new ArrayList<ValetPerson>(totalValetPersons);
