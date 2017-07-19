@@ -28,7 +28,7 @@ public class ValetPersonManagerImpl implements ValetPersonManager {
 	}
 	
 	// for unit test
-	ArrayList<ValetPerson> getValetPersons() {
+	List<ValetPerson> getValetPersons() {
 		return valetPersons;
 	}
 }

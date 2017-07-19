@@ -1,7 +1,7 @@
 package com.kshitiz.parking.management.impl;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 import com.kshitiz.parking.entities.Key;
 import com.kshitiz.parking.entities.ParkingLot;
