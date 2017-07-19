@@ -7,7 +7,7 @@ Design a valet parking system. Requirements of the valet parking system are:
 4. Parking spots come in three sizes, small, med, large  
 5. Thee types of vehicles, small, med, large can be parked  
 	i. Small vehicle can be parked in a small, medium, and large spot  
-	ii. Medium vehicle can be parked in a medium or large spot. 
+	ii. Medium vehicle can be parked in a medium or large spot  
 	iii. Large vehicle can be parked only in a large spot
 
 Design and assumptions
